@@ -6,43 +6,45 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 		<meta name="description" content="Professional Portfolio">
 		<meta name="author" content="Grace Njoroge"
-		<title>Grace Njoroge Professional Portfolio</title>
+		<title></title>
 
 		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="index-style-sheet.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
 	<!-- 	<link href="/css/styles.css" rel="stylesheet"> -->
 
 </head>
 
 <body id="top">
-	<div id="wrapper">
-		<section id="main" class"">
-			<header id="mainheader">
-				<h1>Grace Njoroge</h1>
-				<img scr="            " alt="Logo">
-			</header>
-		
-<nav id="nav-bar">
+	<div class="wrapper">
 
-			<a href="#aboutme">About me</a>
+<header class="mainheader">
 
-			<a href="#projects">Projects</a>
+				<img id="header__image" src="./images/logo.jpg">
+				<h1 id="header__logo">Grace Njoroge</h1>
 
-			<a href="#contact">Resources</a>
+				<nav class="nav-bar">
+<ul class="nav__list">
+			<li class="nav__list-item"><a href="#aboutme">About me</a></li>
 
+			<li class="nav__list-item"><a href="#projects">Projects</a></li>
 
-			
+			<li class="nav__list-item"><a href="#resources">Resources</a></li>
+</ul>
+
 </nav>
-</section>
-
-<section id="aboutme">
-<header class="subheader">
-	<h2> About Me</h2>
 </header>
+		
+<section id="aboutme">
+
 <hr id="hr1">
+
+<header class="subheader">
+<h2> About Me</h2>
+</header>
+
 <img id="image1" src="./images/potrait picture.jpg" alt="potrait picture">
 
-<p id="bio"> Welcome to my professional Portfolio. I am a full stack web developer currently residing in Columbus, OH. I am also experienced in research and regulatory affairs. I am passionate about learning new things and problem solving and I welcome you to explore some of the projects i have worked on in this page.
+<p id="bio"> Welcome to my professional Portfolio. I am a developing full stack web developer currently residing in Columbus, OH. I am also experienced in research and regulatory affairs. I am also passionate about learning new things and problem solving. I welcome you to explore some of the projects I have worked on in this page.
 </p>
 
 <h3> What can I do?</h3>
@@ -54,38 +56,32 @@
 <li>Research</li>
 </div>
 
-<p>To find out more more information about my work experience: </p>
+<p><em>To find out more more information about my work experience please visit:</em> </p>
 
-<p><a href="https://github.com/GraceNjoroge">github</a></p>
-<p><a href="https://www.linkedin.com/in/grace-njoroge-5601841b">LinkedIn</a></p>
-<p><a href="gkmbogo@gmail.com">Email</a></p>
+<p><u><a href="https://github.com/GraceNjoroge">github</a></u></p>
+<p><u><a href="https://www.linkedin.com/in/grace-njoroge-5601841b">LinkedIn</a></u></p>
+<p><u><a href="gkmbogo@gmail.com">Email</a></u></p>
 
 </section>
 
 
 <section id="projects">
 
+<hr id="hr1">
+
 <header class="subheader">
 	<h2> Projects</h2>
 
 </header>
-<hr id="hr1">
 
 <article>
 	<h3>Review Site</h3>
 	<p>
 	In this project I created a simple Spring Boot + MVC app that displays a list of reviews for four Science Centers found in and around Columbus Ohio and allows for the ability to click on an individial review and see its details.
 	</p>
-	<p>This project utilized</p>
-	<ul>
-	<li>Java</li>
-	<li>Thymeleaf dependency</li> 
-	<li>Spring Boot/MVC</li>
-	<li>HTML</li>
-	<li>CSS</li>
-</ul>
-<div id="reviewsitepics">
-	<img class="reviewsitepic" src="./images/reviews.1.jpg" alt="screenshot" style="display:block;">
+
+<div id="pictures">
+<img class="reviewsitepic" src="./images/reviews.1.jpg" alt="screenshot" style="display:block;">
 <img class="reviewsitepic" src="./images/reviews.2.jpg" alt="screenshot" style="display:none;">
 <img class="reviewsitepic" src="./images/reviews.3.jpg" alt="screenshot" style="display:none;">
 <img class="reviewsitepic" src="./images/reviews.4.jpg" alt="screenshot" style="display:none;">
@@ -94,11 +90,21 @@
 </div>
 
 <div class="directional">
-<button class="reviewsitepic-display-left" onclick="plusDivs(-1,4)">Button</button>
-<button class="reviewsitepic-display-right" onclick="plusDivs(1,4)">Button</button>
+<button class="reviewsitepic-display-left" onclick="plusDivs(-1,4)">Next</button>
+<button class="reviewsitepic-display-right" onclick="plusDivs(1,4)">Previous</button>
 </div>
 
+<p>This project utilized</p>
+<ul>
+	<li>Java</li>
+	<li>Thymeleaf dependency</li> 
+	<li>Spring Boot/MVC</li>
+	<li>HTML</li>
+	<li>CSS</li>
+</ul>
+
 <a href="https://github.com/GraceNjoroge/reviews">Github Repo</a>
+
 </article>
 
 <article>
@@ -107,14 +113,8 @@
 	This project takes on a similar design to the Virtual-Pet-Shelter project with the addition of extended child classes for cat, organic dog and robot dog. Abstract classes and interfaces were added in this project to allow for multiple types of pets with varied needs and behaviors. The method calls were also expanded to not llow for certain types of pets to call on each other's methods i.e. Organic pet vs Robotic pet.
 </p>
 
-<ul>
-	<li> Java
-	 <ul>
-			<li>OOP</li>
-		</ul>
-	</li>
-</ul>
-<div id="petamokpictures">
+
+<div id="pictures">
 <img class="petamokscreenshot" src="./images/petamok.1.jpg" alt="scren shot of virtual pets Amok" style="display:block;">
 <img class="petamokscreenshot" src="./images/petamok.2.jpg" alt="scren shot of virtual pets Amok" style="display:none;">
 <img class="petamokscreenshot" src="./images/petamok.3.jpg" alt="scren shot of virtual pets Amok" style="display:none;">
@@ -122,10 +122,18 @@
 </div>
 
 <div class="directional">
-	<button class="virtual-pet-amok-display-left" onclick="plusDivs(-1,2)">button</button>
-	<button class="virtual-pet-amok-display-right" onclick="plusDivs(1,2)">button</button>
+	<button class="virtual-pet-amok-display-left" onclick="plusDivs(-1,2)">Next</button>
+	<button class="virtual-pet-amok-display-right" onclick="plusDivs(1,2)">Previous</button>
 
 </div>
+<p>This project utilized:</p>
+<ul>
+	<li> Java
+	 <ul>
+			<li>OOP</li>
+		</ul>
+	</li>
+</ul>
 
 <a href = "https://github.com/GraceNjoroge/virtual-pet-amok"> Git Hub Repo</a>
 
@@ -138,11 +146,8 @@
 		Used TDD to drive the creation of an application that simulates taking care of virtual pets in a shelter.The application includes a game loop that queries the user, then calls the appropriate method(s) on VirtualPetShelter and/or VirtualPet. 
 	</p>
 
-<ul>
-	<li> Java (TDD)</li>
-</ul>
 
-<div id="virtulpetpictures">
+<div id="pictures">
 	<img class="petsheltercreenshot" src="./images/petshelter.1.jpg" alt="scren shot of virtual pets Shelter" style="display:block;">
 	<img class="petsheltercreenshot" src="./images/petshelter.2.jpg" alt="scren shot of virtual pets Shelter" style="display:none;">
 	<img class="petsheltercreenshot" src="./images/petshelter.3.jpg" alt="scren shot of virtual pets Shelter" style="display:none;">
@@ -151,9 +156,15 @@
 </div>
 
 <div class="directional">
-	<button class="virtual-pet-shelter-display-left" onclick="plusDivs(-1,2)">button</button>
-	<button class="virtual-pet-shelter-display-right" onclick="plusDivs(1,2)">button</button>
+	<button class="virtual-pet-shelter-display-left" onclick="plusDivs(-1,2)">Next</button>
+	<button class="virtual-pet-shelter-display-right" onclick="plusDivs(1,2)">Previous</button>
 </div>
+
+<p>This project utilized</p>
+
+<ul>
+	<li> Java (TDD)</li>
+</ul>
 
 <a href = "https://github.com/GraceNjoroge/virtual-pet-shelter">Github Repo</a>
 </article>
@@ -166,38 +177,56 @@
 		This project used an arraylist class to design a shopApp class that modeled shopping in a similar fashion to Amazon (where items can be added to a card and the total cost increases with each item added). A loop was used to simulate shopping. 
 	</p>
 
-	<ul>
-		<li> Java (Array Lists, MAPS) </li>
-	</ul>
+	<div id="pictures">
 
-	<div id="shoppingcartpictures">
-
-	<img class="shoppingcartscreenshot" src="./images/petshelter.1.jpg" alt="screenshot of shoppingcart" style="display:block;">
-	<img class="shoppingcartscreenshot" src="./images/petshelter.2.jpg" alt="screenshot of shoppingcart" style="display:none;">
-	<img class="shoppingcartscreenshot" src="./images/petshelter.3.jpg" alt="screenshot of shoppingcart" style="display:none;">
-	<img class="shoppingcartscreenshot" src="./images/petshelter.4.jpg" alt="screenshot of shoppingcart" style="display:none;">
+	<img class="shoppingcartscreenshot" src="./images/shoppingcart.1.jpg" alt="screenshot of shoppingcart" style="display:block;">
+	<img class="shoppingcartscreenshot" src="./images/shoppingcart.2.jpg" alt="screenshot of shoppingcart" style="display:none;">
+	<img class="shoppingcartscreenshot" src="./images/shoppingcart.3.jpg" alt="screenshot of shoppingcart" style="display:none;">
+	<img class="shoppingcartscreenshot" src="./images/shoppingcart.4.jpg" alt="screenshot of shoppingcart" style="display:none;">
 </div>
 
 <div class="directional">
-	<button class="shopping-cart-display-left" onclick="plusDivs(-1,2)">button</button>
-	<button class="shopping-cart-display-right" onclick="plusDivs(1,2)">button</button>
+	<button class="shopping-cart-display-left" onclick="plusDivs(-1,2)">Next</button>
+	<button class="shopping-cart-display-right" onclick="plusDivs(1,2)">Previous</button>
 
 </div>
+
+<p> This project utilized</p>
+<ul>
+		<li> Java (Array Lists, MAPS) </li>
+	</ul>
+
 
 <a href="https://github.com/GraceNjoroge/shopping-cart">Github Repo</a>
 
 </article>
 
-</main>
+</section>
 
-<footer>
-<p> 2019 Grace Njoroge
-	
+<section>
 
+	<hr id="hr1">
+
+<header class="subheader">
+	<h2> Resources</h2>
+
+</header>
+
+<p> Coding bootcamp I am currently enrolled in: <a href="https://wecancodeit.org/coding-bootcamp-courses/"><strong> WeCanCodeIT.</strong></a></p>
+
+<p> One of my all time learning resources for all things webdevelopment: <a href="https://www.w3schools.com/"><strong> W3 Schools.</strong></a></p>
+
+</section>
+
+<footer class="bottom footer">
+<p> 2019 Grace Njoroge</p>
+<i class="fab fa-linkedin"></i>
+<i class="fab fa-github"></i>
+
+</footer>
+
+</div>
 </body>
 </html>
 
 
-linkedIn logo: <i class="fab fa-linkedin"></i>
-github logo:<<<i class="fab fa-github"></i>>
-email logo:<<i class="far fa-envelope-open"></i>
