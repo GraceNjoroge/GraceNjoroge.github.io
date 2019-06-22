@@ -109,18 +109,16 @@ color: white;
 	
 }
 
-/*h2,
-h3,
-hr,{
-    margin: 2rem;
-    }*/
-
 #projects  {
 	background-color: #d5ede7;
     display: flex;
     flex-direction: column;
+    flex-basis: wrap;
     align-items: center;
     justify-content: center;
+    margin: 2rem auto;
+    padding:11px;
+    max-width: 100%;
 
 }
 
@@ -129,8 +127,6 @@ hr,{
 	height:auto;
 	max-width:100%;
 }
-
-
 
 .footer{
 	background-color:lightgrey;
@@ -168,3 +164,5 @@ hr,{
 		flex-direction: column;
 	}
 }
+
+/*can i use Align self for each image to get them on a grid*/
