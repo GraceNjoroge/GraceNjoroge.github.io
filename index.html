@@ -7,7 +7,7 @@
 		<meta name="description" content="Professional Portfolio">
 		<meta name="author" content="Grace Njoroge"
 
-		<title></title>
+		<title>Grace Njoroge portfolio</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles.css">
@@ -15,7 +15,8 @@
 </head>
 
 <body id="top">
-	<div class="wrapper">
+
+<div class="wrapper">
 
 <header class="mainheader">
 
@@ -38,24 +39,24 @@
 		
 <section id="aboutme">
 
-<hr id="hr1">
-
 <header class="subheader">
 <h2> About Me</h2>
 </header>
 
 <img id="image1" src="./images/potrait picture.jpg" alt="potrait picture">
+ 
+ <button class="myBio">Show Bio</button>
+<div class="bioContent"
+<p class="hide"> <strong>Welcome to my professional Portfolio.</strong> I am a full stack developer in the making, currently residing in Columbus, OH. I also have over 10 years of research, teaching, and management experience with a focus in healthcare regulatory affairs. My passion lies in problem solving, learning new things, and teamwork. I am also a co-founder of a local organization in Columbus called IttakesAVillage.org that focuses on providing professional and mentorship oportunities to middle and high school students and their parents with a goal of not only helping the next generation excel academically, but also become successful members of society that can pay it forward to future generations.I welcome you to explore some of the projects I have worked on that are featured on this site.</p>
+</div>
 
-<p id="bio"> <strong>Welcome to my professional Portfolio.</strong> I am a full stack developer in the making, currently residing in Columbus, OH. I also have over 10 years of research, teaching, and management experience with a focus in healthcare regulatory affairs. My passion lies in problem solving, learning new things, and teamwork. I am also a co-founder of a local organization in Columbus called IttakesAVillage.org that focuses on providing professional and mentorship oportunities to middle and high schol students and their parents with a goal of not only helping the next generation excel academically, but also become successful members of society that can pay it forward to future generations.</p>
-<p>I welcome you to explore some of the projects I have worked on that are featured on this site.</p>
-
-<button id="collapsible" onclick="collaseFunc()">What Can do?</button>
+<p><strong>What Can I do?</strong></p>
 <div id="skills">
 
-<li> <strong>Backend Web Development</strong> with Java, C# </li>
-<li><strong> Frontend Web Development</strong> with HTML5,CSS, JavaScript,</li>
-<li><strong>MVC Application</strong> with Spring Boot Thymeleaf</li>
-<li><strong>Research<strong></li>
+<li>Backend Web Development <em>with Java, C# </em></li>
+<li>Frontend Web Development<em> with HTML5,CSS, JavaScript</em></li>
+<li>MVC Application <em>with Spring Boot Thymeleaf</em></li>
+<li>Research</li>
 </div>
 
 <p><em>To find out more information about my work experience please visit:</em> </p>
@@ -73,25 +74,22 @@
 <div id ="listProjects">
 
 <article>
-	<h3>Review Site</h3>
+	<h3><strong>Review Site</strong></h3>
 	<p>
 	In this project I created a simple Spring Boot + MVC app that displays a list of reviews for four Science Centers found in and around Columbus Ohio. The app also allows for the ability to click on an individial review and see its details.
 	</p>
 
-<div id="reviewsitepic">
-<img class="reviewsitepic" src="./images/reviews.1.JPG" alt="screenshot" style="display:none">
-<img class="reviewsitepic" src="./images/reviews.2.JPG" alt="screenshot" style="display:block">
-<img class="reviewsitepic" src="./images/reviews.3.JPG" alt="screenshot" style="display:none;">
-<img class="reviewsitepic" src="./images/reviews.4.JPG" alt="screenshot" style="display:none;">
-<img class="reviewsitepic" src="./images/reviews.5.JPG" alt="screenshot" style="display:none;">
-<img class="reviewsitepic" src="./images/reviews.9.JPG" alt="screenshot" style="display:none;"> 
-</div>
+<div class="mySlides-content mySlides-display-container">
+<img class="reviewsitepic" src="./images/reviews.1.JPG" alt="screenshot">
+<img class="reviewsitepic" src="./images/reviews.2.JPG" alt="screenshot">
+<img class="reviewsitepic" src="./images/reviews.3.JPG" alt="screenshot">
+<img class="reviewsitepic" src="./images/reviews.4.JPG" alt="screenshot">
+<img class="reviewsitepic" src="./images/reviews.5.JPG" alt="screenshot">
+<img class="reviewsitepic" src="./images/reviews.9.JPG" alt="screenshot"> 
 
-<div class="directional">
-<button class="reviewsitepic-display-left" onclick="plusDivs(-1,4)">Next</button>
-<button class="reviewsitepic-display-right" onclick="plusDivs(1,4)">Previous</button>
+<button class="mySlides-button reviews-black mySlides-display-left" onclick="plusDivs(-1, 0)">Next</button>
+<button class="mySlides-button reviews-black mySlides-display-right" onclick="plusDivs(1,0)">Previous</button>
 </div>
-
 <p><em>This project utilized</em></p>
 <ul>
 	<li>Java</li>
@@ -102,28 +100,26 @@
 	<li>Agile</li>
 	<li>Scrum</li>
 </ul>
-
 <a href="https://github.com/GraceNjoroge/reviews"><u>Github Repo</u></a>
 
+<br><br>
 </article>
 
 <article>
-	<h3>Virtual Pets Amok</h3>
+	<h3><strong>Virtual Pets Amok</strong></h3>
 	<p>
 	This project takes on a similar design to the Virtual-Pet-Shelter project with the addition of extended child classes for cat, organic dog and robot dog. Abstract classes and interfaces were added in this project to allow for multiple types of pets with varied needs and behaviors. The method calls were also expanded to not allow for certain types of pets to call on each other's methods i.e.Organic pet vs Robotic pet.
 </p>
 
 
-<div id="pictures">
+<div class = "mySlides-content mySlides-display-container">
 <img class="petamokscreenshot" src="./images/petamok.1.JPG" alt="scren shot of virtual pets Amok">
 <img class="petamokscreenshot" src="./images/petamok.2.JPG" alt="scren shot of virtual pets Amok">
 <img class="petamokscreenshot" src="./images/petamok.3.JPG" alt="scren shot of virtual pets Amok">
 <img class="petamokscreenshot" src="./images/petamok.4.JPG" alt="scren shot of virtual pets Amok">
-</div>
 
-<div class="directional">
-	<button class="virtual-pet-amok-display-left" onclick="plusDivs(-1,2)">Next</button>
-	<button class="virtual-pet-amok-display-right" onclick="plusDivs(1,2)">Previous</button>
+	<button class="mySlides-button reviews-black mySlides-display-left" onclick="plusDivs(-1,1)">Next</button>
+	<button class="mySlides-button reviews-black mySlides-display-right" onclick="plusDivs(1,1)">Previous</button>
 
 </div>
 <p><em>This project utilized:</em></p>
@@ -142,25 +138,24 @@
 
 </article>
 
+<br><br>
+
 <article>
-	<h3>Virtual Pet Shelter</h3>
+	<h3><strong>Virtual Pet Shelter</strong></h3>
 
 	<p>
 		Used TDD to drive the creation of an application that simulates taking care of virtual pets in a shelter.The application includes a game loop that queries the user, then calls the appropriate method(s) on VirtualPetShelter and/or VirtualPet. 
 	</p>
 
 
-<div id="pictures">
-	<img class="petsheltercreenshot" src="./images/petshelter.1.JPG" alt="scren shot of virtual pets Shelter" style="display:block">
-	<img class="petsheltercreenshot" src="./images/petshelter.2.JPG" alt="scren shot of virtual pets Shelter" style="display:none;">
-	<img class="petsheltercreenshot" src="./images/petshelter.3.JPG" alt="scren shot of virtual pets Shelter" style="display:none;">
-	<img class="petsheltercreenshot" src="./images/petshelter.4.JPG" alt="scren shot of virtual pets Shelter" style="display:none;">
+<div class = "mySlides-content mySlides-display-container">
+	<img class="petsheltercreenshot" src="./images/petshelter.1.JPG" alt="scren shot of virtual pets Shelter">
+	<img class="petsheltercreenshot" src="./images/petshelter.2.JPG" alt="scren shot of virtual pets Shelter">
+	<img class="petsheltercreenshot" src="./images/petshelter.3.JPG" alt="scren shot of virtual pets Shelter">
+	<img class="petsheltercreenshot" src="./images/petshelter.4.JPG" alt="scren shot of virtual pets Shelter">
 
-</div>
-
-<div class="directional">
-	<button class="pet-shelter-display-left" onclick="plusDivs(-1,2)">Next</button>
-	<button class="pet-shelter-display-right" onclick="plusDivs(1,2)">Previous</button>
+<button class="mySlides-button reviews-black mySlides-display-left" onclick="plusDivs(-1,2)">Next</button>
+<button class="mySlides-button reviews-black mySlides-display-right" onclick="plusDivs(1,2)">Previous</button>
 </div>
 
 <p><em>This project utilized:</em></p>
@@ -174,25 +169,24 @@
 <a href = "https://github.com/GraceNjoroge/virtual-pet-shelter"><u>Github Repo</u></a>
 </article>
 
+<br><br>
+
 <article>
 
-	<h3> Shopping Cart</h3>
+	<h3><strong> Shopping Cart</strong></h3>
 
 	<p>
-		This project used an arraylist class to design a shopApp class that modeled shopping in a similar fashion to Amazon (where items can be added to a card and the total cost increases with each item added). A loop was used to simulate shopping. 
+		This project used an arraylist class to design a shopApp class that modeled shopping in a similar fashion to Amazon (where items can be added to a cart and the total cost increases with each item added). A loop was used to simulate shopping. 
 	</p>
 
-	<div id="pictures">
-
-	<img class="shoppingcartscreenshot" src="./images/shoppingcart.1.JPG" alt="screenshot of shoppingcart" style="display:block">
-	<img class="shoppingcartscreenshot" src="./images/shoppingcart.2.JPG" alt="screenshot of shoppingcart" style="display:none;">
+<div class = "mySlides-content mySlides-display-container">
+	<img class="shoppingcartscreenshot" src="./images/shoppingcart.1.JPG" alt="screenshot of shoppingcart" style="display:none">
+	<img class="shoppingcartscreenshot" src="./images/shoppingcart.2.JPG" alt="screenshot of shoppingcart" style="display:block;">
 	<img class="shoppingcartscreenshot" src="./images/shoppingcart.3.JPG" alt="screenshot of shoppingcart" style="display:none;">
 	<img class="shoppingcartscreenshot" src="./images/shoppingcart.4.JPG" alt="screenshot of shoppingcart" style="display:none;">
-</div>
 
-<div class="directional">
-	<button class="shopping-cart-display-left" onclick="plusDivs(-1,2)">Next</button>
-	<button class="shopping-cart-display-right" onclick="plusDivs(1,2)">Previous</button>
+	<button class="mySlides-button reviews-black mySlides-display-left" onclick="plusDivs(-1,3)">Next</button>
+	<button class="mySlides-button reviews-black mySlides-display-right" onclick="plusDivs(1,3)">Previous</button>
 
 </div>
 
@@ -207,6 +201,7 @@
 <a href="https://github.com/GraceNjoroge/shopping-cart"><u>Github Repo</u></a>
 
 </article>
+<br><br>
 
 </div>
 
@@ -232,9 +227,8 @@
 </main>
 
 <footer class="bottom footer">
+
 <p> &copy;2019 Grace Njoroge</p>
-<i class="fab fa-linkedin"></i>
-<i class="fab fa-github"></i>
 
 </footer>
 
